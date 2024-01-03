@@ -27,12 +27,12 @@ class Tetra {
 		this->cZ = cZ;
 		this->edge = edge;
 
-		vertex = new Vertex[4];
+		vertex = new Vertex[12];
 		indices = (int*)malloc(12);
 
-	    vertex={
+	    vertex=new Vertex{
 			0.0f, edge, 0.0f,
-			edge/2.0, -edge/2.0, 0.0f, 
+			edge/2.0f, -edge/2.0f, 0.0f, 
 			0.0f, 0.0f, edge,
 			-edge/2.0f, -edge/2.0f, 0.0f
 			};
